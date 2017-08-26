@@ -4,9 +4,57 @@
 #include "stdafx.h"
 #include <iostream>
 
+using namespace std;
 
 int main()
 {
+	setlocale(LC_ALL, "rus");
+
+	cout << "¬ведите первую сумму: ";
+	int f1, sh1, p1;
+	cin >> f1 >> sh1 >> p1;
+
+	cout << "¬ведите желаемую операцию (+, -, *, /): ";
+	char answer;
+	cin >> answer;
+
+	switch (answer)
+	{
+	case '+':
+	{
+		cout << "¬ведите второе число";
+		int f2, sh2, p2;
+		cin >> f2 >> sh2 >> p2;
+		break;
+	}
+	case '-':
+	{
+		cout << "¬ведите второе число";
+		int f2, sh2, p2;
+		cin >> f2 >> sh2 >> p2;
+		break;
+	}
+	case '*':
+	{
+		cout << "¬ведите множитель";
+		int factor;
+		cin >> factor;
+		break;
+	}
+	case '/':
+	{
+		cout << "¬ведите делитель";
+		int divider;
+		cin >> divider;
+		break;
+	}
+
+	default:
+		cout << "Ќеверный формат операции" << endl;
+		break;
+	}
+
+	system("pause");
     return 0;
 }
 
