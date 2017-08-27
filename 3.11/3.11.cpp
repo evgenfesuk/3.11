@@ -10,7 +10,7 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 
-	cout << "Ââåäèòå ïåðâóþ ñóììó: ";
+	cout << "Введите первое число: ";
 	int f1, sh1, p1;
 	cin >> f1 >> sh1 >> p1;
 
