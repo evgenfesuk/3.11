@@ -44,6 +44,25 @@ int main()
 		cout << "Input second number: ";
 		int f2, sh2, p2;
 		cin >> f2 >> sh2 >> p2;
+		int newF, newSh, newP;
+		if (f2 > f1)
+		{
+			cout << "Second number is bigger, than first";
+			break;
+		} else newF = f1 - f2;
+		if (sh2 > sh1)
+		{
+			sh1 += 20;
+			newF--;
+		}
+		newSh = sh1 - sh2;
+		if (p2 > p1)
+		{
+			p1 += 12;
+			newSh--;
+		}
+		newP = p1 - p2;
+		cout << newF << " pounds " << newSh << " shillings " << newP << " pence." << endl;
 		break;
 	}
 	case '*':
