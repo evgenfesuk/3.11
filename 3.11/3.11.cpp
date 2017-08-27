@@ -22,6 +22,21 @@ int main()
 		cout << "Input second number: ";
 		int f2, sh2, p2;
 		cin >> f2 >> sh2 >> p2;
+		int newF, newSh, newP;
+		newF = f1 + f2;
+		newSh = sh1 + sh2;
+		newP = p1 + p2;
+		if (newP >= 12)
+		{
+			newSh++;
+			newP -= 12;
+		}
+		if (newSh >= 20)
+		{
+			newF++;
+			newSh -= 20;
+		}
+		cout << newF << " pounds " << newSh << " shillings " << newP << " pence." << endl;
 		break;
 	}
 	case '-':
