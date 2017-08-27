@@ -14,7 +14,7 @@ int main()
 	int f1, sh1, p1;
 	cin >> f1 >> sh1 >> p1;
 
-	cout << "Ââåäèòå æåëàåìóþ îïåðàöèþ (+, -, *, /): ";
+	cout << "Выберите желаемую операцию (+, -, *, /): ";
 	char answer;
 	cin >> answer;
 
@@ -22,35 +22,35 @@ int main()
 	{
 	case '+':
 	{
-		cout << "Ââåäèòå âòîðîå ÷èñëî";
+		cout << "Введите второе число: ";
 		int f2, sh2, p2;
 		cin >> f2 >> sh2 >> p2;
 		break;
 	}
 	case '-':
 	{
-		cout << "Ââåäèòå âòîðîå ÷èñëî";
+		cout << "Введите второе число: ";
 		int f2, sh2, p2;
 		cin >> f2 >> sh2 >> p2;
 		break;
 	}
 	case '*':
 	{
-		cout << "Ââåäèòå ìíîæèòåëü";
+		cout << "Введите множитель: ";
 		int factor;
 		cin >> factor;
 		break;
 	}
 	case '/':
 	{
-		cout << "Ââåäèòå äåëèòåëü";
+		cout << "Введите делитель: ";
 		int divider;
 		cin >> divider;
 		break;
 	}
 
 	default:
-		cout << "Íåâåðíûé ôîðìàò îïåðàöèè" << endl;
+		cout << "Неверный формат ввода" << endl;
 		break;
 	}
 
